@@ -53,8 +53,7 @@
 				  		echo '<td> &#8369 '.  number_format($result->PRODISPRICE,2).'</td>';
 
 				  		echo '<td width="4%">'. $result->PROQTY.'</td>';
-						  echo '<td align="center"><a title="Edit" href="index.php?view=edit&id='.$result->PROID.'" class="btn btn-primary btn-xs  ">  <span class="fa fa-edit fw-fa"></a>
-						  <a title="Delete" name="delete" href="controller.php?action=delete&id='.$result->PROID.'" class="btn btn-danger btn-xs  ">  <span class="fa  fa-trash-o fw-fa "></a></td>';
+						  echo '<td align="center"><a title="Edit" href="index.php?view=edit&id='.$result->PROID.'" class="btn btn-primary btn-xs  ">  <span class="fa fa-edit fw-fa"></a>';
 				  		// echo '<td><a href="controller.php?action=delete&id='.$result->PROD.'" class="btn btn-danger">delete</a></td>';
 
 				  		

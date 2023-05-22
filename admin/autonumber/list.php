@@ -13,7 +13,7 @@
 			     <div class="table-responsive">					
 				<table id="example" class="table table-striped table-bordered table-hover"  style="font-size:12px" cellspacing="0">
 				
-				  <thead>
+				  <thead class="thead-dark">
 				  	<tr> 
 				  		<th>
 				  		 <!-- <input type="checkbox" name="chkall" id="chkall" onclick="return checkall('selector[]');">  -->

@@ -36,7 +36,7 @@
                     // echo '<td align="left">
                     // <a href="controller.php?action=cartadd&id='.$result->PRODUCTID.'&price='.$result->PRICE.'" class="btn btn_fixnmix btn-xs"><strong>Add to Cart</strong></a></td>';
                       echo '<td align="left">
-                    <a href="index.php?view=addtocart"   data-id="'.$result->PRODUCTID.'" class="btn btn_fixnmix btn-xs MAINorder"><strong>Add to Cart</strong></a></td>';
+                    <a href="index.php?view=addtocart" id="btnAdd"  data-id="'.$result->PRODUCTID.'" class="btn btn_fixnmix btn-xs MAINorder"><strong>Add to Cart</strong></a></td>';
                     //  echo '<td align="left">
                     // <a href="" data-target="#CART" data-toggle="modal"  data-id="'.$result->PRODUCTID.'" class="btn btn_fixnmix btn-xs MAINorder"><strong>Add to Cart</strong></a></td>';
                     echo '</tr>';
@@ -46,4 +46,28 @@
             </table>
             </div><br/>
            </form>
-       
+        
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script>
+
+        var button = document.getElementById('btnAdd')
+
+function removeReg(del_reg) {
+  swal({
+      text: "Are you sure you want to delete? \n the reg name : " + del_reg,
+      icon: "error",
+      buttons: ['NO', 'YES'],
+      dangerMode: true
+    })
+    .then(function(value) {
+      console.log('returned value:', value);
+    });
+}
+
+button.addEventListener('click', function() {
+  console.log('clicked on button')
+  removeReg('SomeCustomRegName');
+});
+      
+ 
+    </script>

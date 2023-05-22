@@ -9,6 +9,7 @@
     <title>
         <?php echo $title; ?>
     </title>
+    <link rel="stylesheet" href="<?php echo web_root;?>admin/css/custome.css">
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous"> -->
     <!-- Bootstrap Core CSS -->
     <link href="<?php echo web_root; ?>admin/css/bootstrap.min.css" rel="stylesheet">
@@ -94,10 +95,10 @@ if ($res > 0) {
                 <!-- /.dropdown -->
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                     
+
                         <img title="profile image" width="23px" height="17px"
                             src="<?php echo web_root . 'admin/user/' . $singleuser->USERIMAGE ?>">
-                            <?php echo $_SESSION['U_NAME']; ?> 
+                        <?php echo $_SESSION['U_NAME']; ?>
 
                     </a>
                     <ul class="dropdown-menu dropdown-acnt">
@@ -137,7 +138,7 @@ if ($res > 0) {
             <ul class="nav" id="side-menu">
 
 
-                    <!-- <li>
+                <!-- <li>
                             <a href="<?php echo web_root; ?>admin/index.php"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
                         </li> -->
 
@@ -272,6 +273,7 @@ if ($res > 0) {
 
 
     <!-- jQuery -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <script src="<?php echo web_root; ?>admin/jquery/jquery.min.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <!-- Bootstrap Core JavaScript -->
@@ -297,12 +299,13 @@ if ($res > 0) {
     <script type="text/javascript">
         $(document).on("click", ".PROID", function () {
             // var id = $(this).attr('id');
+            
             var proid = $(this).data('id')
             // alert(proid)
             $(".modal-body #proid").val(proid)
 
         });
-
+       
     </script>
 
     <!-- Page-Level Demo Scripts - Tables - Use for reference -->
@@ -381,7 +384,7 @@ if ($res > 0) {
     </script>
 </body>
 <footer>
-    <p style="text-align: center;font-weight: bold;">Copyright &copy; Charot lang </p>
+    <p style="text-align: center;font-weight: bold;">Copyright &copy; Ferus Online Shop V-0.1 </p>
 </footer>
 
 </html>

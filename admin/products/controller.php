@@ -157,10 +157,6 @@ function doInsert(){
 }
 
 	function doDelete(){
-
- 
- 
-
 		if (isset($_POST['selector'])==''){
 			message("Select the records first before you delete!","error");
 			redirect('index.php');

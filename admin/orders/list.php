@@ -20,7 +20,7 @@
 			    <form action="controller.php?action=delete" Method="POST">  					
 				 <div class="table-responsive">	
                   <table id="example" class="table  table-striped table-bordered table-hover"  style="font-size:12px" cellspacing="0">
-			 		<thead>
+			 		<thead class="thead-dark"> 
 			 		<tr >
 				  		<th>#</th>
 				  		<th>Order#</th>
@@ -32,7 +32,7 @@
 				  		<th width="100px">Action</th>
 				 
 				  	</tr>	
-			   		</thead>
+			   		</thead >
 			   		<tbody>
 					<?php 
 				  		$query = "SELECT * FROM `tblsummary` s ,`tblcustomer` c 

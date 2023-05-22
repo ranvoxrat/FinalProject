@@ -159,7 +159,8 @@ function product_exists($pid){
     for($i=0;$i<$max;$i++){
       if($pid==$_SESSION['gcCart'][$i]['productid']){
         $flag=1;
-        message("Item is already in the cart.","error");
+      
+         message("Item is already in the cart.","error");
         break;
       }
     }

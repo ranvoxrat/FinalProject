@@ -4,6 +4,7 @@
      }
 
 ?>
+<h1>Hello agfgjagjagjaj</h1>
   <form action="" method="post">
 <div class="container"> 
       <div class="">
@@ -16,7 +17,6 @@
       <h4 align="center">Block 5 AR Zayco Subdivision<br/>
       Kabankalan City<br/>
       </h4>
-
               <legend><h2 class="text-left">Billing Details</h2></legend>
 
    <table>

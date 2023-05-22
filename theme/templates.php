@@ -212,6 +212,7 @@ if (isset($_SESSION['gcCart'])) {
   <div class="modal fade" id="myOrdered">
   </div>
   <?php include "LogSignModal.php"; ?>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
   <script src="<?php echo web_root; ?>jquery/jquery.min.js"></script>
   <script src="<?php echo web_root; ?>js/bootstrap.min.js"></script>
   <script src="<?php echo web_root; ?>js/jquery.dataTables.min.js"></script>
