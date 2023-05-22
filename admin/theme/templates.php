@@ -159,6 +159,7 @@ if ($res > 0) {
                 </li>
                 <?php if ($_SESSION['U_ROLE'] == 'Administrator') {
                     # code...
+                    // redirect(web_root."admin/index.php");
                     ?>
                     <li>
                         <a href="<?php echo web_root; ?>admin/settings/index.php"><i class="fa fa-list-alt fa-fw"></i>

@@ -191,7 +191,7 @@
                                           "image"></label>
                                           <div class="col-md-8">
                                         <p>  I <input type="checkbox" id="conditionterms" name="conditionterms" value="checkbox" />
-                                           <small>Agree with the <a class="toggle-modal"  onclick=" OpenPopupCenter('terms.php','Terms And Codition','600','600')"  ><b>TERMS AND CONDITION</b></a> of Janobe Source Code.</small>
+                                           <small>Agree with the <a class="toggle-modal"  onclick=" OpenPopupCenter('terms.php','Terms And Codition','600','600')"  ><b>TERMS AND CONDITION</b></a> of Ferus Shop</small>
                                            
                                           </div>
                                         </div>

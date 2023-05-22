@@ -1,10 +1,11 @@
 <?php
-	 if (!isset($_SESSION['USERID'])){
-       redirect(web_root."admin/index.php");
-	   exit;
+    if (!isset($_SESSION['USERID'])){
+		redirect(web_root."index.php");
+		exit;
      }
-
 ?>
+<?php if ($_SESSION['U_ROLE'] == 'Administrator') {?>
+	
 <div class="row">
        	 <div class="col-lg-12">
             <h1 class="page-header">List of Users  <a href="index.php?view=add" class="btn btn-primary btn-xs  ">  <i class="fa fa-plus-circle fw-fa"></i> New</a>  </h1>
@@ -67,5 +68,11 @@
 			</div>
 				</form>
 	
-
+	
 </div> <!---End of container-->
+<?php 
+	}
+?>
+<?php if ($_SESSION['U_ROLE'] == 'Staff' || $_SESSION['U_ROLE']=='Encoder') {?>
+	<h1>Hello</h1> <?php echo $_SESSION['U_ROLE']; ?>
+<?php }?>

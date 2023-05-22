@@ -7,8 +7,7 @@
                 </div>
                 <div class="modal-body">
 
- <h1>You can create you own terms and condition</h1>
-
+ <h1>My Terms and Condition still on Progress</h1>
 </div>
  
 </div>
