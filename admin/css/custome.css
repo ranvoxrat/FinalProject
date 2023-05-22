@@ -1,0 +1,26 @@
+
+.navbar{
+    background-color: orange!important;
+    color:white!important;
+}
+.navbar-brand, .dropdown-toggle {
+    color: white!important;
+}
+.dropdown-toggle:hover{
+    background-color: brown!important;
+    color: rgb(255, 255, 255)!important;
+}
+.page-header{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    border-color: orangered!important;
+    border-radius: solid 1px orange!important;
+}
+.text-user{
+    background-color: orange;
+    color: white;
+    padding: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 900;
+}
